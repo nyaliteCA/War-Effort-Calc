@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>FR Helper</title>
+	<script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <nav>
+           <br>
+           <div style="font-size: 32px;"> Heat Advisory </div>
+			<br>
+			<br>
+			<br>
+        </nav>
+		
+	<div class="h-100 d-flex align-items-center justify-content-center">
+		<div id="inputs">
+			<div class="col">
+				<div class="row">
+				<div class="card flex-row" id="frInput" style="width: 58rem;">
+						<img class="card-img-left" src="img/fire.jpg"/>
+							<div class="card-body">
+								<h4 class="card-title h5 h4-sm">FR from Gear, Self-buffs, and Enchants:</h4>
+								<p class="card-text">Don't include totem or motw</p>
+							</div>
+							<div class="float-right d-flex justify-content-center">
+								<input type="text" id="frInputField" class="form-control" style="font-size: 24px;"></input>
+							</div>
+					</div>
+				</div>
+				<div class="row mt-3">
+				<div class="card flex-row" id="frConsumes" style="width: 58rem;">
+				<div class="card-body">
+								<h4 class="card-title h5 h4-sm">Consumes</h4>
+								<p class="card-text"></p>
+							</div>
+				</div>
+				</div>
+				<div class="row">
+					<div class="card flex-row" id="frFlaskCard" style="width: 58rem;">
+					
+							<img class="card-img-left" src="img/flask.jpg"/>
+							<div class="card-body">
+								<h4 class="card-title h5 h4-sm">[Flask] Flask of Chromatic Resistance</h4>
+								<p class="card-text">+25 FR</p>
+							</div>
+						 <a href="#" class="btn btn-secondary p-4 rounded-0 float-right" id="frFlaskBtn">
+							<img id="flaskBtnIcon" src="img/x-lg.svg" width="32" height="32">
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="card flex-row" id="frJujuCard" style="width: 58rem;">
+					
+							<img class="card-img-left" src="img/juju.jpg"/>
+							<div class="card-body">
+								<h4 class="card-title h5 h4-sm">Juju Ember</h4>
+								<p class="card-text">+15 FR</p>
+							</div>
+						 <a href="#" class="btn btn-secondary p-4 rounded-0 float-right" id="frJujuBtn">
+							<img id="jujuBtnIcon" src="img/x-lg.svg" width="32" height="32">
+						</a>
+					</div>
+				</div>
+				<div class="row mt-3">
+				<div class="card flex-row" id="frGear" style="width: 58rem;">
+				<div class="card-body">
+								<h4 class="card-title h5 h4-sm">Enchants</h4>
+								<p class="card-text">Only activtate Enchants you didn't already include earlier with your gear</p>
+							</div>
+				</div>
+				</div>
+				<div class="row">
+					<div class="card flex-row" id="frHelmCard" style="width: 58rem;">
+						<img class="card-img-left" src="img/helm.jpg"/>
+						<img class="card-img-left" src="img/arcanum.jpg"/>
+							<div class="card-body">
+								<h4 class="card-title h5 h4-sm">[Helm] Lesser Arcanum of Resilience</h4>
+								<p class="card-text">+20 FR</p>
+							</div>
+						 <a href="#" class="btn btn-secondary p-4 rounded-0 float-right" id="frHelmBtn">
+							 <img id="HelmBtnIcon" src="img/x-lg.svg" width="32" height="32">
+						</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="card flex-row" id="frShoulderCard" style="width: 58rem;">
+					<img class="card-img-left" src="img/shoulder.jpg"/>
+					<img class="card-img-left" src="img/Flame.jpg"/>
+					<div class="card-body">
+						<h4 class="card-title h5 h4-sm">[Shoulders] Blessed Flame Mantle of the Dawn</h4>
+						<p class="card-text">+15 FR</p>
+					</div>
+					 <a href="#" class="btn btn-secondary p-4 rounded-0 float-right" id="frShoulderBtn">
+						<img id="shoulderBtnIcon" src="img/x-lg.svg" width="32" height="32">
+					</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="card flex-row" id="frShoulder2Card" style="width: 58rem;">
+					<img class="card-img-left" src="img/shoulder.jpg"/>
+					<img class="card-img-left" src="img/smflame.jpg"/>
+					<div class="card-body">
+						<h4 class="card-title h5 h4-sm">[Shoulders] Flame Mantle of the Dawn</h4>
+						<p class="card-text">+5 FR</p>
+					</div>
+					 <a href="#" class="btn btn-secondary p-4 rounded-0 float-right" id="frShoulder2Btn">
+						<img id="shoulder2BtnIcon" src="img/x-lg.svg" width="32" height="32">
+					</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="card flex-row" id="frCloakCard" style="width: 58rem;">
+						<img class="card-img-left" src="img/cloak.jpg"/>
+						<img class="card-img-left" src="img/water.jpg"/>
+							<div class="card-body">
+								<h4 class="card-title h5 h4-sm">[Cloak] Hydraxian Coronation</h4>
+								<p class="card-text">+20 FR</p>
+							</div>
+							 <a href="#" class="btn btn-secondary p-4 rounded-0 float-right" id="frCloakBtn">
+								<img id="cloakBtnIcon" src="img/x-lg.svg" width="32" height="32">
+							</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="card flex-row" id="frLegCard" style="width: 58rem;">
+						<img class="card-img-left" src="img/pants.jpg"/>
+						<img class="card-img-left" src="img/arcanum.jpg"/>
+							<div class="card-body">
+								<h4 class="card-title h5 h4-sm">[Pants] Lesser Arcanum of Resilience</h4>
+								<p class="card-text">+20 FR</p>
+							</div>
+						 <a href="#" class="btn btn-secondary p-4 rounded-0 float-right" id="frPantsBtn">
+							<img id="pantsBtnIcon" src="img/x-lg.svg" width="32" height="32">
+						</a>
+					</div>
+				</div>
+				<div class="row mt-5 mb-2">
+				<div class="card flex-row" id="frOutput" style="width: 58rem;">
+							<div class="card-body">
+								<h4 class="card-title h5 h4-sm">FR before Raid Buffs: </h4>
+								<p class="card-text" id="frTotal" style="font-size: 24px;" >0</p>
+							</div>
+							
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="card flex-row" id="frMarkCard" style="width: 58rem;">
+						<img class="card-img-left" src="img/mark.jpg"/>
+							<div class="card-body">
+								<h4 class="card-title h5 h4-sm">With Mark of the Wild</h4>
+								<p class="card-text" id="resultMark" ></p>
+							</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="card flex-row" id="frImpMarkCard" style="width: 58rem;">
+						<img class="card-img-left" src="img/impmark.jpg"/>
+							<div class="card-body">
+								<h4 class="card-title h5 h4-sm">With 5/5 Improved Mark of the Wild</h4>
+								<p class="card-text" id="resultImpMark" ></p>
+							</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="card flex-row" id="frTotemCard" style="width: 58rem;">
+						<img class="card-img-left" src="img/totem.jpg"/>
+							<div class="card-body">
+								<h4 class="card-title h5 h4-sm">With Totem</h4>
+								<p class="card-text" id="resultTotem" ></p>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+	</div>
+<script type="text/javascript" src="scripts.js"></script>
+
+
+</body></html>

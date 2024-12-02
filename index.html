@@ -1,1 +1,121 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>War Effort Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <img src="img/badge.jpg" alt="Badge" class="title-img">
+            War Effort Calculator
+            <img src="img/badge.jpg" alt="Badge" class="title-img">
+        </h1>
+        <table class="table-container">
+            <tr>
+                <th>Item</th>
+                <th></th> <!-- Blank header -->
+                <th>Price (In Gold)</th> <!-- Updated header text -->
+                <th class="cost-header">Cost/<img src="img/badge.jpg" alt="Badge" class="header-img"></th> <!-- New header with image -->
+            </tr>
+            <tr>
+                <td><img src="img/rugged.jpg" alt="Rugged Leather"></td>
+                <td><span class="name">Rugged Leather</span></td>
+                <td><input type="number" id="ruggedInput" placeholder="0.93"></td> <!-- Default placeholder -->
+                <td id="ruggedValue">1g</td>
+            </tr>
+            <tr>
+                <td><img src="img/thick.jpg" alt="Thick Leather"></td>
+                <td><span class="name">Thick Leather</span></td>
+                <td><input type="number" id="thickInput" placeholder="1.43"></td> <!-- Default placeholder -->
+                <td id="thickValue">1g</td>
+            </tr>
+            <tr>
+                <td><img src="img/heavy.jpg" alt="Heavy Leather"></td>
+                <td><span class="name">Heavy Leather</span></td>
+                <td><input type="number" id="heavyInput" placeholder="0.8"></td> <!-- Default placeholder -->
+                <td id="heavyValue">1g</td>
+            </tr>
+            <tr>
+                <td><img src="img/Bandage.jpg" alt="Runecloth"></td>
+                <td><span class="name">Runecloth Bandage</span></td>
+                <td><input type="number" id="bandageInput" placeholder="0.43"></td> <!-- Default placeholder -->
+                <td id="bandageValue">1g</td>
+            </tr>
+        </table>
+        <div class="cheapest">
+            Cheapest Item: <span id="itemResult">Runecloth Bandage</span>
+            <img src="img/Bandage.jpg" alt="Runecloth Bandage">
+        </div>
+        <div class="world-buff-token">
+            <h2>Cost per World Buff Token</h2>
+            <p>To acquire 50 <img src="img/badge.jpg" alt="Badge" class="inline-img"> for a buff token using <span id="cheapestItemName">Runecloth Bandage</span> <img id="cheapestItemImg" src="img/Bandage.jpg" class="inline-img"> it will cost:</p>
+            <p class="total-cost"><span id="totalCost">86.00g</span></p> <!-- New line for the result -->
+        </div>
+        <div class="vendors">
+            <h2>Vendor Locations</h2>
+            <div class="vendor-items">
+                <div class="vendor-item">
+                    <img src="img/dmf.jpg" alt="Defective Magic 8-ball">
+                    <div class="vendor-info">
+                        <h3>"Defective" Magic 8-ball</h3>
+                        <p>Vendor: <span class="vendor-name">Nixx Sprocketspring</span></p>
+                        <p>Location: <span class="vendor-location">Gadgetzan</span></p>
+                    </div>
+                </div>
+                <div class="vendor-item">
+                    <img src="img/firewater.jpg" alt="Firewater Cauldron">
+                    <div class="vendor-info">
+                        <h3>Firewater Cauldron</h3>
+                        <p>Vendor: <span class="vendor-name">Meilosh</span></p>
+                        <p>Location: <span class="vendor-location">Timbermaw Hold</span></p>
+                    </div>
+                </div>
+                <div class="vendor-item">
+                    <img src="img/rally.jpg" alt="Horn of the Dawn">
+                    <div class="vendor-info">
+                        <h3>Horn of the Dawn</h3>
+                        <p>Vendor: <span class="vendor-name">Quartermaster Miranda Breechlock</span></p>
+                        <p>Location: <span class="vendor-location">Light's Hope Chapel</span></p>
+                    </div>
+                </div>
+                <div class="vendor-item">
+                    <img src="img/rend.jpg" alt="Overseer's Anvil">
+                    <div class="vendor-info">
+                        <h3>Overseer's Anvil</h3>
+                        <p>Vendor: <span class="vendor-name">Lokhtos Darkbargainer</span></p>
+                        <p>Location: <span class="vendor-location">Grim Guzzler</span></p>
+                    </div>
+                </div>
+                <div class="vendor-item">
+                    <img src="img/dm.jpg" alt="Shimmer Globe">
+                    <div class="vendor-info">
+                        <h3>Shimmer Globe</h3>
+                        <p>Vendor: <span class="vendor-name">Duke Hydraxis</span></p>
+                        <p>Location: <span class="vendor-location">Azshara</span></p>
+                    </div>
+                </div>
+                <div class="vendor-item">
+                    <img src="img/songflower.jpg" alt="Songflower">
+                    <div class="vendor-info">
+                        <h3>Songflower Seed</h3>
+                        <p>Vendor: <span class="vendor-name">Aurel Goldleaf</span></p>
+                        <p>Location: <span class="vendor-location">Silithus</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="vendor-item centered">
+                <img src="img/zg.jpg" alt="Spirit Conch">
+                <div class="vendor-info">
+                    <h3>Spirit Conch</h3>
+                    <p>Vendor: <span class="vendor-name">Rin'wosho The Trader</span></p>
+                    <p>Location: <span class="vendor-location">Stranglethorn Vale</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

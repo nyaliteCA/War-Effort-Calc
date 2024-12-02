@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d5c1c7; /* Updated background color */
+    color: #000000;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f29cb7; 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(219, 112, 147, 0.5);
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-img {
+    max-width: 50px;
+    height: auto;
+    margin: 0 10px;
+}
+
+/* Cheapest Item Section */
+.cheapest {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    background-color: #ffffe0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 3px solid #a0a0a0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cheapest span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+    margin-right: 10px;
+}
+
+.cheapest img {
+    max-width: 50px;
+    height: auto;
+}
+
+/* Input Section */
+.input-section {
+    margin-bottom: 20px;
+}
+
+.input-section label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000;
+}
+
+/* Remove arrows in input boxes and set default italic placeholder */
+input[type="number"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #b0b0b0;
+    border: 1px solid #db7093;
+    color: #000000;
+    border-radius: 5px;
+    -moz-appearance: textfield; /* Remove arrows in Firefox */
+    -webkit-appearance: none; /* Remove arrows in WebKit browsers */
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::placeholder {
+    font-style: italic; /* Italics for placeholder text */
+}
+
+/* Table */
+.table-container {
+    width: 70%; 
+    margin: auto;
+    border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-container th {
+    background-color: transparent;
+    color: #000000;
+    font-size: 20px;
+}
+
+.cost-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+.header-img {
+    transform: scale(0.4);
+    transform-origin: left;
+}
+
+.table-container img {
+    max-width: 60px;
+    height: auto;
+}
+
+.table-container .name {
+    font-size: 18px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.table-container td[id*="Value"] {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.table-container input[type="number"], .table-container input[type="text"] {
+    width: 90px;
+    padding: 2px;
+}
+
+/* World Buff Token Section */
+.world-buff-token {
+    text-align: center; /* Center the text */
+    margin-top: 20px;
+    background-color: #ffefd5; /* Light peach background */
+    border: 2px solid #db7093; /* Deep pink border */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.world-buff-token h2 {
+    font-size: 28px; /* Larger title */
+}
+
+.world-buff-token p {
+    font-size: 24px; /* Large text */
+    line-height: 1.5;
+}
+
+.inline-img {
+    width: 20px; /* Make the images smaller and inline */
+    height: auto;
+    vertical-align: middle;
+}
+
+.total-cost {
+    font-size: 28px; /* Larger font for the total cost */
+    font-weight: bold; /* Bold the final cost */
+}
+
+/* Vendors Section */
+.vendors {
+    text-align: center; /* Center the text */
+    margin-top: 20px;
+    background-color: #add8e6; /* Light blue background */
+    border: 2px solid #5f9ea0; /* Cadet blue border */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+}
+
+.vendors h2 {
+    font-size: 28px; /* Larger title */
+}
+
+.vendor-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.vendor-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    width: 48%;
+}
+
+.vendor-info {
+    margin-left: 10px;
+    text-align: left;
+}
+
+.vendor-info h3 {
+    margin: 0;
+}
+
+.vendor-info p {
+    margin: 5px 0;
+}
+
+.centered {
+    justify-content: center;
+    width: 100%;
+}
